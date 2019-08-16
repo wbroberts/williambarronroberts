@@ -1,21 +1,24 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Fade from 'react-reveal/Fade';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+    <div className="w-full flex flex-col justify-center text-center">
+      <Fade top>
+        <h1 className="text-5xl tracking-wide font-semibold text-blue-900">
+          William Roberts
+        </h1>
+      </Fade>
 
-export default IndexPage
+      <Fade bottom delay={500}>
+        <h2>Full stack developer</h2>
+      </Fade>
+    </div>
+  </Layout>
+);
+
+export default IndexPage;
