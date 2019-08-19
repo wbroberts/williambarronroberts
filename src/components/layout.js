@@ -1,31 +1,21 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faGitlab,
+  faGithub,
+  faNpm,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 
-import Header from './header';
 import '../css/styles.css';
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+library.add(faGithub, faGitlab, faNpm, faLinkedin);
 
+const Layout = ({ children }) => {
   return (
     <>
-      <div className="w-full flex flex-col text-gray-900 sm:max-w-4xl sm:m-auto">
+      <div className="w-full flex flex-col text-gray-900">
         <main>{children}</main>
       </div>
     </>

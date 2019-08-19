@@ -1,0 +1,28 @@
+.icon-bg {
+  opacity: 0;
+  transition-duration: 200ms;
+  transition-property: transform, opacity;
+}
+
+.animate {
+  transition-duration: 300ms;
+  transition-property: opacity;
+}
+
+.icon-bg,
+.animate {
+  transition-timing-function: ease-out;
+}
+
+.icon-container:hover > .icon-bg {
+  transform: scale(1.4) rotate(180deg);
+  opacity: 1;
+}
+
+.icon-container:active > .icon-bg {
+  transform: scale(1.5);
+}
+
+.icon-container:hover > .animate {
+  opacity: 1;
+}

@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-postcss",
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,9 +15,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
+        name: 'pages',
         path: `${__dirname}/src/pages`,
       },
     },
@@ -32,16 +32,23 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/flavicon.png`,
       },
     },
     {
-      resolve: "gatsby-plugin-purgecss",
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Fira Sans:200,300,400,700`, `Lato:400,400i`],
+        display: 'swap',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-purgecss',
       options: {
         tailwind: true,
-        purgeOnly: ["/src/css/styles.css"],
+        purgeOnly: ['/src/css/styles.css'],
       },
     },
     `gatsby-plugin-offline`,
   ],
-}
+};
