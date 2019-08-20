@@ -6,16 +6,39 @@ import {
   faGithub,
   faNpm,
   faLinkedin,
+  faAngular,
+  faReact,
+  faNodeJs,
+  faJsSquare,
+  faVuejs,
+  faSalesforce,
+  faCss3,
+  faHtml5,
+  faGit,
 } from '@fortawesome/free-brands-svg-icons';
 
 import '../css/styles.css';
 
-library.add(faGithub, faGitlab, faNpm, faLinkedin);
+library.add(
+  faGithub,
+  faGitlab,
+  faNpm,
+  faLinkedin,
+  faAngular,
+  faReact,
+  faNodeJs,
+  faJsSquare,
+  faVuejs,
+  faSalesforce,
+  faCss3,
+  faHtml5,
+  faGit
+);
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="w-full flex flex-col text-gray-900">
+      <div className="w-full flex flex-col text-gray-900 antialiased">
         <main>{children}</main>
       </div>
     </>

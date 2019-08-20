@@ -2,7 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './brand-icon.css';
 
-export const BrandIcon = ({ icon, link, size = '2x', color = 'gray-900' }) => {
+export const BrandIcon = ({
+  icon,
+  link,
+  size = '2x',
+  color = 'white',
+  borderColor = 'white',
+}) => {
   return (
     <a
       href={link}
@@ -12,11 +18,11 @@ export const BrandIcon = ({ icon, link, size = '2x', color = 'gray-900' }) => {
       <div
         className="icon-bg absolute border-dashed border-b-2 border-t-2 w-12 h-12 rounded-full"
         style={{
-          borderColor: color,
+          borderColor: borderColor,
         }}
       ></div>
       <FontAwesomeIcon
-        className="animate z-10 text-white opacity-50"
+        className={`animate z-10 text-${color} opacity-50`}
         icon={['fab', icon]}
         size={size}
       />
