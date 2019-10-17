@@ -8,9 +8,3 @@ This is the code for my [personal website](https://www.williambarronroberts.com)
 - Gatsby
 - Tailwindcss
 - Netlify
-- Netlify CMS
-
-## Api Connections
-
-- Github
-- Gitlab
