@@ -37,7 +37,7 @@ const renderIcon = (icon, index) => {
       return <TypescriptIcon key={index} classes={classes} fill={fill} />;
     case 'webpack':
       return (
-        <WebpackIcon key={index} key={index} classes={classes} fill={fill} />
+        <WebpackIcon key={index} classes={classes} fill={fill} />
       );
     case 'babel':
       return <BabelIcon key={index} classes={classes} fill={fill} />;
