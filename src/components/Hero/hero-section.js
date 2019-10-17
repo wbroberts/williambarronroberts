@@ -9,13 +9,13 @@ export const HeroSection = () => {
   return (
     <article className="bg-hero w-screen h-screen flex flex-col justify-center items-center text-center">
       <Fade top delay={250}>
-        <h1 className="font-display text-5xl tracking-wide font-thin text-white">
+        <h1 className="font-display text-5xl tracking-wide font-thin text-white opacity-0">
           William Roberts
         </h1>
       </Fade>
 
       <Zoom delay={1250}>
-        <div className="flex justify-center mt-3">
+        <div className="flex justify-center mt-3 opacity-0">
           <BrandIcon
             borderColor="#e65328"
             icon="gitlab"
@@ -44,7 +44,7 @@ export const HeroSection = () => {
       </Zoom>
 
       <Fade bottom delay={750}>
-        <h2 className="font-body text-xl tracking-wide text-white mt-5">
+        <h2 className="font-body text-xl tracking-wide text-white mt-5 opacity-0">
           Full stack developer.
         </h2>
       </Fade>
